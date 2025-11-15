@@ -51,8 +51,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download JAR
-        uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v5
         with:
           name: app-jar
           path: build/libs
