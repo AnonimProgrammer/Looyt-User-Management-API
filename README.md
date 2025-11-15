@@ -6,12 +6,6 @@ The project is deployed and accessible online.
 
 ---
 
-## Repository
-
-[GitHub Repository](https://github.com/AnonimProgrammer/Looyt-User-Management-API)
-
----
-
 ## Deployed API
 
 **Base URL:** [https://looyt-user-management-api-production.up.railway.app](https://looyt-user-management-api-production.up.railway.app)
