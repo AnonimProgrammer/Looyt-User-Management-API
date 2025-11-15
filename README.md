@@ -6,13 +6,13 @@ The project is deployed and accessible online.
 
 ---
 
-## 🔗 Repository
+## Repository
 
 [GitHub Repository](https://github.com/AnonimProgrammer/Looyt-User-Management-API)
 
 ---
 
-## 🌐 Deployed API
+## Deployed API
 
 **Base URL:** [https://looyt-user-management-api-production.up.railway.app](https://looyt-user-management-api-production.up.railway.app)
 
@@ -24,7 +24,7 @@ Example: [https://looyt-user-management-api-production.up.railway.app/actuator/h
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 Example `.env` file:
 
@@ -43,7 +43,7 @@ POSTGRES_PASSWORD=password
 
 ---
 
-## 🐳 Docker Compose
+## Docker Compose
 
 Local development can be run with:
 
@@ -60,14 +60,14 @@ docker compose --profile dev up --build
 
 ---
 
-## 📝 API Endpoints
+## API Endpoints
 
 **Roles:** `USER`, `ADMIN`  
 **Statuses:** `ACTIVE`, `INACTIVE`, `BLOCKED`  
 
 ---
 
-### 1️⃣ Create a new user
+### 1.Create a new user
 
 ```http
 POST /v1/users
@@ -88,7 +88,7 @@ Content-Type: application/json
 
 ---
 
-### 2️⃣ Get user by ID
+### 2.Get user by ID
 
 ```http
 GET /v1/users/{id}
@@ -102,7 +102,7 @@ GET https://looyt-user-management-api-production.up.railway.app/v1/users/9f2fcbe
 
 ---
 
-### 3️⃣ List users
+### 3.List users
 
 ```http
 GET /v1/users
@@ -124,7 +124,7 @@ GET https://looyt-user-management-api-production.up.railway.app/v1/users?search=
 
 ---
 
-### 4️⃣ Update user
+### 4.Update user
 
 ```http
 PUT /v1/users/{id}
@@ -143,7 +143,7 @@ Content-Type: application/json
 
 ---
 
-### 5️⃣ Update user role
+### 5.Update user role
 
 ```http
 PATCH /v1/users/{id}/role
@@ -160,7 +160,7 @@ Content-Type: application/json
 
 ---
 
-### 6️⃣ Update user status
+### 6.Update user status
 
 ```http
 PATCH /v1/users/{id}/status
@@ -177,7 +177,7 @@ Content-Type: application/json
 
 ---
 
-### 7️⃣ Delete user
+### 7.Delete user
 
 ```http
 DELETE /v1/users/{id}
@@ -185,7 +185,7 @@ DELETE /v1/users/{id}
 
 ---
 
-## 🛠️ Local Setup
+## Local Setup
 
 1. Clone the repository:
 
@@ -210,7 +210,7 @@ http://localhost:8080
 
 ---
 
-## ✅ Notes
+## Notes
 
 - All endpoints return proper HTTP status codes and error messages.
 - Logging is enabled for debugging and tracing requests.
@@ -219,10 +219,26 @@ http://localhost:8080
 
 ---
 
-## 🏗️ Optional Improvements / Bonus
+## Extra Features & Enhancements
 
-- Unit tests for service and controller layers  
-- Database migrations with Flyway  
-- CI/CD pipeline integration  
-- Kafka for event-driven notifications (optional)
+This project includes several enhancements beyond the basic requirements:
+
+- **Pagination**: Supported in `GET /v1/users` for better performance with large datasets.
+- **Unit Tests**: Full coverage for controller, service, and mapper layers.
+- **CI/CD**: Simple automation pipeline to build, test, and deploy the application automatically.
+
+## CI/CD Flow
+- Automatically builds the Docker image.
+- Runs all tests.
+- Deploys to the configured environment (e.g., Railway) if tests pass.
+
+---
+
+<p align="center">
+  <b>Omar Ismayilov</b><br>
+  <i>Software Engineer • Backend & System Design Enthusiast</i><br>
+  Building reliable systems with simplicity and architecture in mind.
+</p>
+
+
 
