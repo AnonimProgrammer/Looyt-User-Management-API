@@ -47,7 +47,7 @@ jobs:
       image: ghcr.io/railwayapp/cli:latest
     env:
       SVC_ID: abundant-adaptation
-      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_API_KEY }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
