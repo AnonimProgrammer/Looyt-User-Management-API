@@ -54,7 +54,6 @@ jobs:
     env:
       SVC_ID: Looyt-User-Management-API
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      SPRING_PROFILES_ACTIVE: prod
     steps:
       - uses: actions/checkout@v4
 
@@ -64,4 +63,6 @@ jobs:
           path: build/libs
 
       - name: Deploy
-        run: railway up --service=${{ env.SVC_ID }}
+        run: |
+          railway up --service=${{ env.SVC_ID }} \
+          --env SPRING_PROFILES_ACTIVE=prod
