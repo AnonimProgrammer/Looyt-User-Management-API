@@ -54,6 +54,7 @@ jobs:
     env:
       SVC_ID: Looyt-User-Management-API
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      SPRING_PROFILES_ACTIVE: prod
     steps:
       - uses: actions/checkout@v4
 
