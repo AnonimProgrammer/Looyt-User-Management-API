@@ -30,6 +30,7 @@ SPRING_DATASOURCE_PASSWORD=<password>
 SPRING_PROFILES_ACTIVE=prod
 
 # Local PostgreSQL (Docker)
+POSTGRES_URL=jdbc:postgresql://db:5432/user_db
 POSTGRES_DB=user_db
 POSTGRES_USER=user
 POSTGRES_PASSWORD=password
