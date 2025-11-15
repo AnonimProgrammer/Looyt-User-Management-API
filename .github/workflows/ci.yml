@@ -46,7 +46,7 @@ jobs:
     container:
       image: ghcr.io/railwayapp/cli:latest
     env:
-      SVC_ID: abundant-adaptation
+      SVC_ID: Looyt-User-Management-API
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
     steps:
       - name: Checkout repository
